@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/04/12 14:46:01.274,=C:\jujuEcole\projetC++\Project1PCH1.h</Transaction>
+    <Transaction>2021/04/12 14:46:01.403,=C:\jujuEcole\projetC++\File1.cpp</Transaction>
+    <Transaction>2021/04/12 14:46:44.307,C:\jujuEcole\projetC++\projetCodeBarre\main.cpp=C:\jujuEcole\projetC++\File1.cpp</Transaction>
+    <Transaction>2021/04/12 14:47:00.354,C:\jujuEcole\projetC++\projetCodeBarre\ProjectCodeBarre.h=C:\jujuEcole\projetC++\Project1PCH1.h</Transaction>
+    <Transaction>2021/04/12 14:47:00.699,C:\jujuEcole\projetC++\projetCodeBarre\Project1.cbproj=C:\jujuEcole\projetC++\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

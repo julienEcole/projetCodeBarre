@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <iostream>
+#include <string.h>
+#include <random>
+using namespace std;
+
+char binaireA[10][8], binaireB[10][8], binaireC[10][8];
+
+char* RcupererLigne(char tableau[10][8],int actual){
+	char result[8];
+	for(int i = 0; i < 7; i++){
+		result[i] = tableau[actual][i];
+	}
+	return ((char*)result);
+}
+
+void initBinaire(){
+	for (int i = 0; i < 10; i++) {
+		for(int j = 0; j <7; j++){
+			binaireA[i][j] = (rand()%2 + '0');
+			binaireB[i][j] = (rand()%2 + '0');
+			binaireC[i][j] = (rand()%2 + '0');
+		}
+	}
+}
+
+void afficherEnsemble(){
+	int chiffreUtilisateur = -1;
+	while (chiffreUtilisateur < 0 || chiffreUtilisateur > 10){
+		cout << "Entrer un chiffre : ";
+		cin >> chiffreUtilisateur;
+	}
+    cout << "\nElement de type A : " << RcupererLigne(binaireA,chiffreUtilisateur)
+	<< "\nElement de type B : " << RcupererLigne(binaireB,chiffreUtilisateur)
+	<< "\nElement de type C : " << RcupererLigne(binaireC,chiffreUtilisateur) << "\n";
+}
+
+int main()
+{
+	initBinaire();
+	afficherEnsemble();
+	cin.get();
+	return 0;
+}
